@@ -1,0 +1,2 @@
+# kinoinfo
+Kinoinfo test app
