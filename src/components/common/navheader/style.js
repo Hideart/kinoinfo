@@ -4,16 +4,23 @@ import { fonts, fontSizes } from '../../../assets/fonts';
 import colors from '../../../assets/style/colors';
 
 export default StyleSheet.create({
+  m: (value) => ({ margin: value }),
+  mr: (value) => ({ marginRight: value }),
+  ml: (value) => ({ marginLeft: value }),
+  mt: (value) => ({ marginTop: value }),
+  mb: (value) => ({ marginBottom: value }),
   title: {
-    position: 'absolute',
-    left: 0,
-    right: 0,
-    textAlign: 'center',
     fontFamily: fonts.light,
     color: colors.white,
     fontSize: fontSizes.winTitle,
-   },
+    position: 'absolute',
+    width: 142,
+    marginLeft: -71,
+    left: '50%',
+    textAlign: 'center',
+  },
   shadowPlank: {
+    height: 130,
     shadowColor: colors.black,
     shadowOffset: {
       width: 0,
@@ -24,13 +31,12 @@ export default StyleSheet.create({
     elevation: 24,
   },
   gradientPlank: {
-    paddingTop: 30,
-    paddingBottom: 20,
-    paddingHorizontal: 20,
-    width: '100%',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
+    flex: 1,
+    flexDirection: 'column',
+    paddingTop: 20,
+    paddingLeft: 15,
+    paddingRight: 15,
+    paddingBottom: 7,
   },
   backButton: {
     fontFamily: fonts.light,
