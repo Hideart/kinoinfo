@@ -1,4 +1,4 @@
 # kinoinfo
 Kinoinfo test app
-some changes
+delete this string
 more changes
