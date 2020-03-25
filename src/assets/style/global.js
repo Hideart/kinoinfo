@@ -14,5 +14,4 @@ export default {
   invisible: { display: 'none' },
 
   w: (value) => ({ width: value || 0 }),
-  flex: (value) => ({ flex: value || 1 }),
 };
